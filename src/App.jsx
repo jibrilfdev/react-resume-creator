@@ -5,6 +5,7 @@ import Section from "./components/Section.jsx";
 import GeneralSection from "./components/GeneralSection.jsx";
 import WorkSection from "./components/WorkSection.jsx";
 import EducationSection from "./components/EducationSection.jsx";
+import SkillsSection from "./components/SkillsSection.jsx";
 
 function App() {
   // Editing index is a state for making sure only one section is being edited at a time.
