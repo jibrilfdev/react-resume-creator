@@ -7,6 +7,7 @@ import WorkSection from "./components/WorkSection.jsx";
 import EducationSection from "./components/EducationSection.jsx";
 import ProjectsSection from "./components/ProjectsSection.jsx";
 import SkillsSection from "./components/SkillsSection.jsx";
+import PreviewResume from "./components/PreviewResume.jsx";
 
 function App() {
   // Editing index is a state for making sure only one section is being edited at a time.
@@ -23,7 +24,7 @@ function App() {
         <SkillsSection sectionname="Skill" editing={editingIndex == 0} onClose={() => setEditingIndex(-1)} onShow={() => setEditingIndex(4)} />
       </div>
       <div>
-        <h3>Resume Preview</h3>
+        <PreviewResume />
       </div>
     </>
   );
