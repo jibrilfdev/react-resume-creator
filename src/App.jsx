@@ -10,10 +10,15 @@ function App() {
   return (
     <>
       <h1>Resume App</h1>
-      <Section sectionname="General Information" editing={editingIndex == 0} onClose={() => setEditingIndex(-1)} onShow={() => setEditingIndex(0)} />
-      <Section sectionname="Education" editing={editingIndex == 0} onClose={() => setEditingIndex(-1)} onShow={() => setEditingIndex(0)} />
-      <Section sectionname="Work Experience" editing={editingIndex == 0} onClose={() => setEditingIndex(-1)} onShow={() => setEditingIndex(0)} />
-      <Section sectionname="Skill" editing={editingIndex == 0} onClose={() => setEditingIndex(-1)} onShow={() => setEditingIndex(0)} />
+      <div>
+        <Section sectionname="General Information" editing={editingIndex == 0} onClose={() => setEditingIndex(-1)} onShow={() => setEditingIndex(0)} />
+        <Section sectionname="Education" editing={editingIndex == 0} onClose={() => setEditingIndex(-1)} onShow={() => setEditingIndex(0)} />
+        <Section sectionname="Work Experience" editing={editingIndex == 0} onClose={() => setEditingIndex(-1)} onShow={() => setEditingIndex(0)} />
+        <Section sectionname="Skill" editing={editingIndex == 0} onClose={() => setEditingIndex(-1)} onShow={() => setEditingIndex(0)} />
+      </div>
+      <div>
+        <h3>Resume Preview</h3>
+      </div>
     </>
   );
 }
