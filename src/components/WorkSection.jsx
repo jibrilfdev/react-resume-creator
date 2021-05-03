@@ -25,7 +25,7 @@ export default function WorkSection( { sectionname, editing, onClose, onShow } )
       <br />
       <label for="">{sectionname}</label><br />
       <div style={{paddingLeft: "5px"}}>
-        <input type="name" value={job} onChange={(e) => setName(e.target.value)} /> <br />
+        <input type="name" value={job} onChange={(e) => setJob(e.target.value)} /> <br />
         <input type="name" value={timeline} onChange={(e) => setTimeline(e.target.value)} /> <br />
         <input type="name" value={location} onChange={(e) => setLocation(e.target.value)} /> <br />
         <input type="name" value={bulletOne} onChange={(e) => setBulletOne(e.target.value)} /> <br />
