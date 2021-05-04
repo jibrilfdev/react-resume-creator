@@ -1,14 +1,6 @@
 import { useState } from "react";
 
-export default function ProjectsSection( { sectionname, editing, onClose, onShow } ) {
-  const [projectOne, setProjectOne] = useState("");
-  const [projectOneTimeline, setProjectOneTimeline] = useState("");
-  const [projectOneBulletOne, setProjectOneBulletOne] = useState("");
-  const [projectOneBulletTwo, setProjectOneBulletTwo] = useState("");
-  const [projectTwo, setProjectTwo] = useState("");
-  const [projectTwoTimeline, setProjectTwoTimeline] = useState("");
-  const [projectTwoBulletOne, setProjectTwoBulletOne] = useState("");
-  const [projectTwoBulletTwo, setProjectTwoBulletTwo] = useState("");
+export default function ProjectsSection( { sectionname, editing, onClose, onShow, projectOne, setProjectOne, projectOneTimeline, setProjectOneTimeline, projectOneBulletOne, setProjectOneBulletOne, projectOneBulletTwo, setProjectOneBulletTwo, projectTwo, setProjectTwo, projectTwoTimeline, setProjectTwoTimeline, projectTwoBulletOne, setProjectTwoBulletOne, projectTwoBulletTwo, setProjectTwoBulletTwo } ) {
 
   if (!editing) {
     return (
@@ -31,14 +23,14 @@ export default function ProjectsSection( { sectionname, editing, onClose, onShow
       <br />
       <label for="">{sectionname}</label><br />
       <div style={{paddingLeft: "5px"}}>
-        <input type="name" value={projectOne} onChange={(e) => setProjectOne(e.target.value)} /> <br />
-        <input type="name" value={projectOneTimeline} onChange={(e) => setProjectOneTimeline(e.target.value)} /> <br />
-        <input type="name" value={projectOneBulletOne} onChange={(e) => setProjectOneBulletOne(e.target.value)} /> <br />
-        <input type="name" value={projectOneBulletTwo} onChange={(e) => setProjectOneBulletTwo(e.target.value)} /> <br />
-        <input type="name" value={projectTwo} onChange={(e) => setProjectTwo(e.target.value)} /> <br />
-        <input type="name" value={projectTwoTimeline} onChange={(e) => setProjectTwoTimeline(e.target.value)} /> <br />
-        <input type="name" value={projectTwoBulletOne} onChange={(e) => setProjectTwoBulletOne(e.target.value)} /> <br />
-        <input type="name" value={projectTwoBulletTwo} onChange={(e) => setProjectTwoBulletTwo(e.target.value)} /> <br />
+        <label for="">Project One Name: </label><input type="name" value={projectOne} onChange={(e) => setProjectOne(e.target.value)} /> <br />
+        <label for="">Project One Timeline: </label><input type="name" value={projectOneTimeline} onChange={(e) => setProjectOneTimeline(e.target.value)} /> <br />
+        <label for="">Project One Information: </label><input type="name" value={projectOneBulletOne} onChange={(e) => setProjectOneBulletOne(e.target.value)} /> <br />
+        <label for="">Project One Information: </label><input type="name" value={projectOneBulletTwo} onChange={(e) => setProjectOneBulletTwo(e.target.value)} /> <br />
+        <label for="">Project Two Name: </label><input type="name" value={projectTwo} onChange={(e) => setProjectTwo(e.target.value)} /> <br />
+        <label for="">Project Two Timeline: </label><input type="name" value={projectTwoTimeline} onChange={(e) => setProjectTwoTimeline(e.target.value)} /> <br />
+        <label for="">Project Two Information: </label><input type="name" value={projectTwoBulletOne} onChange={(e) => setProjectTwoBulletOne(e.target.value)} /> <br />
+        <label for="">Project Two Information: </label><input type="name" value={projectTwoBulletTwo} onChange={(e) => setProjectTwoBulletTwo(e.target.value)} /> <br />
         <button type="button" onClick={onClose}>Done</button>
       </div>
     </>

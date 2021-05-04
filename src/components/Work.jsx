@@ -1,4 +1,3 @@
-
 export default function Work( {job, timeline, location, bulletOne, bulletTwo } ) {
   return (
     <>

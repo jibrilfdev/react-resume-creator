@@ -3,13 +3,12 @@ import { useState } from "react";
 export default function Section( { sectionname, editing, onClose, onShow } ) {
   const [text, setText] = useState("");
 
-  // Return an "editing mode" or "normal mode" based on editing prop
   if (!editing) {
     return (
     <>
-        <p>{sectionname}</p>
-        <p>{text}</p>
-        <button type="button" onClick={onShow}>Edit</button>
+      <p>{sectionname}</p>
+      <p>{text}</p>
+      <button type="button" onClick={onShow}>Edit</button>
     </>
     )
   }

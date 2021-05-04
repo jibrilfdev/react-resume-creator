@@ -1,9 +1,6 @@
 import { usestate } from "react";
 
-export default function skillssection( { sectionname, editing, onclose, onshow } ) {
-  const [languages, setLanguages] = useState("");
-  const [frameworks, setFrameworks] = useState("");
-  const [devtools, setDevtools] = useState("");
+export default function SkillsSection( { sectionname, editing, onclose, onshow, languages, setlanguages, frameworks, setframeworks, devtools, setdevtools } ) {
 
   if (!editing) {
     return (
@@ -21,12 +18,11 @@ export default function skillssection( { sectionname, editing, onclose, onshow }
       <br />
       <label for="">{sectionname}</label><br />
       <div style={{paddingleft: "5px"}}>
-        <input type="name" value={languages} onchange={(e) => setlanguages(e.target.value)} /> <br />
-        <input type="name" value={frameworks} onchange={(e) => setframeworks(e.target.value)} /> <br />
-        <input type="name" value={devtools} onchange={(e) => setdevtools(e.target.value)} /> <br />
+        <label for="">languages: </label><input type="name" value={languages} onchange={(e) => setlanguages(e.target.value)} /> <br />
+        <label for="">frameworks: </label><input type="name" value={frameworks} onchange={(e) => setframeworks(e.target.value)} /> <br />
+        <label for="">devtools: </label><input type="name" value={devtools} onchange={(e) => setdevtools(e.target.value)} /> <br />
         <button type="button" onclick={onclose}>done</button>
       </div>
     </>
   )
 }
-
