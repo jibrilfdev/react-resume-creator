@@ -7,7 +7,7 @@ npm
 
 ## Installation
 
-Clone the repository locally.
+Clone the repository locally. Install dependencies using the proper npm command then build or run it using the command.
 
 ```bash
 git clone https://github.com/jibrilfdev/react-resume-creator
